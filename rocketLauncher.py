@@ -32,8 +32,6 @@ class startRocket():
       frame_height = int(cap.get(4))
       
       out = cv2.VideoWriter('rocketLauncher.avi',cv2.VideoWriter_fourcc('M','J','P','G'), 10, (frame_width,frame_height))
-
-      self.fire()
       
       while(True):
          ret, frame = cap.read()
